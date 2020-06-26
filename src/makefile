@@ -27,12 +27,10 @@
 #===============================================================================
 
 # Builds Binary Files
-all: all-apps all-buffer all-fork-join all-kcall-local all-kcall-remote all-noise \
-		all-perf all-server all-comm all-teste
+all: all-teste
 
 # Cleans Object Files
-clean: clean-apps clean-buffer clean-fork-join clean-kcall-local clean-kcall-remote \
-		clean-noise clean-perf clean-server clean-comm clean-teste
+clean: clean-teste
 
 # Cleans Everything
 distclean: distclean-apps distclean-buffer distclean-fork-join distclean-kcall-local \
