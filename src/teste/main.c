@@ -24,8 +24,7 @@
 
 #include <nanvix/sys/noc.h>
 #include <nanvix/sys/perf.h>
-
-#include "comm.h"
+#include "../comm.h"
 
 #if __TARGET_HAS_PORTAL || __TARGET_HAS_MAILBOX
 
