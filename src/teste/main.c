@@ -26,7 +26,7 @@
 #include <nanvix/sys/perf.h>
 
 #if __TARGET_HAS_PORTAL || __TARGET_HAS_MAILBOX
-#include "comm.h"
+#include "comm/comm.h"
 
 /**
  * @brief Horizontal line
