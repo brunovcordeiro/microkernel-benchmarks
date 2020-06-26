@@ -28,11 +28,11 @@
 
 # Builds Binary Files
 all: all-apps all-buffer all-fork-join all-kcall-local all-kcall-remote all-noise \
-		all-perf all-server all-comm
+		all-perf all-server all-comm teste
 
 # Cleans Object Files
 clean: clean-apps clean-buffer clean-fork-join clean-kcall-local clean-kcall-remote \
-		clean-noise clean-perf clean-server clean-comm
+		clean-noise clean-perf clean-server clean-comm teste
 
 # Cleans Everything
 distclean: distclean-apps distclean-buffer distclean-fork-join distclean-kcall-local \
@@ -242,3 +242,23 @@ distclean-comm:
 # Builds multibinary image.
 image-comm:
 	@$(MAKE) -C comm image
+
+#===============================================================================
+# comm
+#===============================================================================
+
+# Builds comm.
+all-teste:
+	@$(MAKE) -C teste all
+
+# Cleans object files.
+clean-teste:
+	@$(MAKE) -C teste clean
+
+# Cleans object files.
+distclean-teste:
+	@$(MAKE) -C teste distclean
+
+# Builds multibinary image.
+image-teste:
+	@$(MAKE) -C teste image
